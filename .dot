@@ -1,0 +1,10 @@
+digraph G{ 
+pau[label="<paul>left|<paum>pau|<paur>right];
+zorro[label="<zorrol>left|<zorrom>zorro|<zorror>right];
+pau:paul->zorro:zorrom;
+arbol[label="<arboll>left|<arbolm>arbol|<arbolr>right];
+casa[label="<casal>left|<casam>casa|<casar>right];
+montar[label="<montarl>left|<montarm>montar|<montarr>right];
+casa:casal->montar:montarm;
+arbol:arboll->casa:casam;
+pau:paur->arbol:arbolm;

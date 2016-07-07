@@ -1,0 +1,32 @@
+digraph G{ 
+ node[shape=record]; 
+estas[label="<estasl>left|<estasm>estas fe:0|<estasr>right"];
+como[label="<comol>left|<comom>como fe:0|<comor>right"];
+Hola[label="<Holal>left|<Holam>Hola fe:0|<Holar>right"];
+blabla[label="<blablal>left|<blablam>blabla fe:0|<blablar>right"];
+Hola:Holar->blabla:blablam;
+como:comol->Hola:Holam;
+dani[label="<danil>left|<danim>dani fe:0|<danir>right"];
+como:comor->dani:danim;
+estas:estasl->como:comom;
+se[label="<sel>left|<sem>se fe:0|<ser>right"];
+no[label="<nol>left|<nom>no fe:0|<nor>right"];
+mucho[label="<muchol>left|<muchom>mucho fe:0|<muchor>right"];
+mas[label="<masl>left|<masm>mas fe:0|<masr>right"];
+mucho:muchol->mas:masm;
+no:nol->mucho:muchom;
+que[label="<quel>left|<quem>que fe:0|<quer>right"];
+poner[label="<ponerl>left|<ponerm>poner fe:0|<ponerr>right"];
+que:quel->poner:ponerm;
+no:nor->que:quem;
+se:sel->no:nom;
+tengo[label="<tengol>left|<tengom>tengo fe:0|<tengor>right"];
+sueño[label="<sueñol>left|<sueñom>sueño fe:0|<sueñor>right"];
+tengo:tengol->sueño:sueñom;
+yo[label="<yol>left|<yom>yo fe:0|<yor>right"];
+y[label="<yl>left|<ym>y fe:0|<yr>right"];
+yo:yol->y:ym;
+tengo:tengor->yo:yom;
+se:ser->tengo:tengom;
+estas:estasr->se:sem;
+}
